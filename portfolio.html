@@ -291,7 +291,7 @@
         </div>
       </div>
     </main>
-    <footer class="footer">
+ <footer class="footer">
       <section class="container footer-section">
         <div class="footer-contact">
           <a href="./index.html" class="footer-logo">
@@ -346,6 +346,21 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h3 class="footer-newsletter-title">zapisz się do newslettera</h3>
+          <div class="footer-newsletter-form">
+            <form name="formularz-newslettera" autocomplete="on" action="http://localhost:3000/posts"
+          method="POST">
+              <input type="email" name="email" placeholder="E-mail" required/>
+              <button type="submit">
+                Zapisz się
+                <svg class="footer-newsletter-icon">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </section>
     </footer>
