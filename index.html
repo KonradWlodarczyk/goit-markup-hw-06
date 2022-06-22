@@ -388,6 +388,7 @@
         </div>
       </section>
     </main>
+    <!-- FOOTER -->
     <footer class="footer">
       <section class="container footer-section">
         <div class="footer-contact">
@@ -444,12 +445,84 @@
             </li>
           </ul>
         </div>
+        <div class="footer-newsletter">
+          <h3 class="footer-newsletter-title">zapisz się do newslettera</h3>
+          <div class="footer-newsletter-form">
+            <form name="formularz-newslettera" autocomplete="on" action="http://localhost:3000/posts"
+          method="POST">
+              <input type="email" name="email" placeholder="E-mail" required/>
+              <button type="submit">
+                Zapisz się
+                <svg class="footer-newsletter-icon">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
       </section>
     </footer>
     <!-- OKNO MODALNE -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>X</button>
+        <h3>Zostaw swoje dane w formularzu poniżej</h3>
+        <form
+          class="sign-up-form"
+          name="sign-up-form"
+          action="http://localhost:3000/posts"
+          method="POST"
+          autocomplete="on"
+        >
+          <label for="user-name">
+            Imie
+            <svg class="form-icon-user sign-up-icon">
+              <use href="./images/icons.svg#icon-person-black"></use>
+            </svg>
+            <input id="user-name" type="text" name="name" />
+          </label>
+
+          <label for="user-phone">
+            Telefon
+            <svg class="form-icon-phone sign-up-icon">
+              <use href="./images/icons.svg#icon-phone-black"></use>
+            </svg><input id="user-phone" type="tel" name="phone-number" />
+          </label>
+
+          
+          <label for="user-email">
+            Email
+            <svg class="form-icon-email sign-up-icon">
+              <use href="./images/icons.svg#icon-email-black"></use>
+            </svg> <input id="user-email" type="email" name="email" />
+          </label>
+
+         
+          <label>
+            Komentarz
+            <textarea
+              name="feedback"
+              rows="6"
+              placeholder="Wprowadź tekst"
+            ></textarea>
+          </label>
+
+          <div>
+            <input
+              class="modal-form-policy"
+              id="user-policy"
+              type="checkbox"
+              required
+            />
+            <label for="user-policy" class="modal-form-policy-text">
+              Oświadczam iż akceptuję&nbsp;
+              <a href="#">Regulamin</a>
+              &nbsp;i&nbsp;
+              <a href="#">Politykę Prywatności.</a>
+            </label>
+          </div>
+          <button type="submit">Wyślij</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
