@@ -681,9 +681,6 @@ a {
 .policy-check-box input {
   width: auto;
 }
-.modal-form-policy:hover {
-  cursor: pointer;
-}
 .modal-form-policy-text a {
   color: var(--brand-color);
 }
@@ -704,6 +701,7 @@ a {
   width: 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 2px;
+  cursor: pointer;
 }
 .modal-form-policy:checked + .modal-form-policy-text::before {
   border: none;
