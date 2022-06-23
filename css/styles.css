@@ -390,7 +390,7 @@ a {
 .footer-contact {
   display: flex;
   flex-direction: column;
-  min-width: 250px;
+  min-width: 245px;
 }
 .footer-section {
   display: flex;
@@ -486,9 +486,6 @@ a {
   letter-spacing: 0.03em;
   padding-bottom: 20px;
 }
-.footer-newsletter-form {
-  display: flex;
-}
 .footer-newsletter-form input {
   height: 50px;
   width: 358px;
@@ -501,6 +498,7 @@ a {
   align-items: center;
   letter-spacing: 0.03em;
   padding: 16px;
+  margin-right: 12px;
 }
 .footer-newsletter-form input:focus {
   outline: none;
@@ -528,6 +526,7 @@ a {
   padding-left: 42px;
   gap: 24px;
   cursor: pointer;
+  border: none;
 }
 .footer-newsletter-icon {
   display: inline-flex;
@@ -675,6 +674,12 @@ a {
 .modal-form-policy {
   position: absolute;
   opacity: 0;
+}
+.policy-check-box input {
+  width: auto;
+}
+.modal-form-policy:hover {
+  cursor: pointer;
 }
 .modal-form-policy-text a {
   color: var(--brand-color);
