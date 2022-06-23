@@ -478,6 +478,9 @@ a {
   flex-direction: column;
   justify-content: start;
 }
+.footer-newsletter form {
+  display: flex;
+}
 .footer-newsletter-title {
   text-transform: uppercase;
   font-weight: 700;
